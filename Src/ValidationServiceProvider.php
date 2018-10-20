@@ -1,11 +1,10 @@
 <?php
 
-namespace YiluTech;
+namespace YiluTech\Validation;
 
-use Illuminate\Validation\ValidationServiceProvider as Extend;
-use App\Customers\Validation\Factory;
+use Illuminate\Validation\ValidationServiceProvider as ProviderContract;
 
-class ValidationServiceProvider extends Extend
+class ValidationServiceProvider extends ProviderContract
 {
     /**
      * Bootstrap any application services.
