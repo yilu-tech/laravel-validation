@@ -1,0 +1,17 @@
+{
+  "name": "yilu-tech/laravel-validation",
+  "description": "validation",
+  "authors": [
+    {
+      "name": "yj",
+      "email": "yj@yilu.co"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "YiluTech\\Validation\\": "src/"
+    }
+  }
+}
