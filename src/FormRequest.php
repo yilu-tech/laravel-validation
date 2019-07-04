@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class FormRequest extends LaravelFormRequest
 {
     /*
-     *  @return string (X_X_X_rule)
+     *  @return string (X_X_X_rules)
      *
      */
 
@@ -16,7 +16,7 @@ class FormRequest extends LaravelFormRequest
     {
         $functionName = substr($request->getRequestUri(), 1);
 
-        preg_replace('/[\/\-]/g', '_' , $functionName);
+        $functionName = preg_replace('/[\/\-]/', '_' , $functionName);
 
         $functionName = $functionName . "_rules";
 
