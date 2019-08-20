@@ -1,24 +1,24 @@
 {
-  "name": "yilu-tech/laravel-validation",
-  "description": "validation",
-  "authors": [
-    {
-      "name": "yj",
-      "email": "yj@yilu.co"
+    "name": "yilu-tech/laravel-validation",
+    "description": "validation",
+    "authors": [
+        {
+            "name": "yj",
+            "email": "yj@yilu.co"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "YiluTech\\Validation\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "YiluTech\\Validation\\ValidationServiceProvider"
+            ]
+        }
     }
-  ],
-  "require": {
-  },
-  "autoload": {
-    "psr-4": {
-      "YiluTech\\Validation\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "YiluTech\\Validation\\ValidationServiceProvider"
-      ]
-    }
-  }
 }
