@@ -24,7 +24,7 @@ class Validator extends ValidatorContract
             return parent::validate();
         } catch (\Exception $exception) {
             if ($this->messages->isEmpty()) {
-                throw new HttpException(200, 'Form validate success.');
+                throw new HttpException(202, 'Form validate success.');
             }
             throw $exception;
         }
