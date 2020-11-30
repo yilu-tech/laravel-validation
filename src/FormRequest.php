@@ -19,9 +19,9 @@ class FormRequest extends LaravelFormRequest
 //        $functionName = preg_replace('/[\/\-]/', '_' , $functionName);
 
         //取方法名
-        $functionName = explode("/",$functionName);
-        $functionName = explode("?",$functionName[count($functionName)-1]);
-        $functionName = preg_replace('/[\-]/', '_' , $functionName[0]);
+        $functionName = explode("/", $functionName);
+        $functionName = explode("?", $functionName[count($functionName) - 1]);
+        $functionName = preg_replace('/[\-]/', '_', $functionName[0]);
         $functionName = $functionName . "_rules";
 
         return $this->$functionName();
