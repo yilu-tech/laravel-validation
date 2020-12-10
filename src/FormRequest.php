@@ -14,7 +14,7 @@ class FormRequest extends LaravelFormRequest
 
     public function rules(Request $request)
     {
-        $functionName = substr($request->getRequestUri(), 1);
+        $functionName = substr(explode('?', $request->getRequestUri())[0], 1);
 
 //        $functionName = preg_replace('/[\/\-]/', '_' , $functionName);
 
